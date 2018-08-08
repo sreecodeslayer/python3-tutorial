@@ -57,3 +57,22 @@ This can also be done in a more pythonic way
 # bio_string = 'My name is %s %s and am %d years old!'
 # print(bio_string % bio)
 
+'''
+3. Operations
+==============
+Length : the len() function
+'''
+# long_text = 'Duis velit eu nulla dolor non quis ad sunt do laboris occaecat sit velit.'
+# print(len(long_text))
+
+'''
+Repeatition counting : the count() function
+'''
+# print(long_text.count('i'))
+# print(long_text.count('lit'))
+
+'''
+Position of first occurence character in the whole string
+'''
+# print(long_text.index('i'))
+# print(long_text.index('lit'))
