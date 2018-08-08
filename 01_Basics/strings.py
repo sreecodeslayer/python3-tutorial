@@ -76,3 +76,17 @@ Position of first occurence character in the whole string
 '''
 # print(long_text.index('i'))
 # print(long_text.index('lit'))
+
+'''
+Replace character or word
+'''
+# print(long_text.replace('lit','out'))
+# print(long_text)
+
+'''
+Now that is interesting, we told python to replace, it replaced, but we have an unchanged string? Why?
+
+Well, python did replace those characters, but we didn't tell it where to save the changes to.
+'''
+# no_lit_long_text = long_text.replace('lit','out')
+# print(no_lit_long_text)
