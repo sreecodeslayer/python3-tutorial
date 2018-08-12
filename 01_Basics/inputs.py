@@ -16,9 +16,7 @@ let's user feed data to program
 
 """
 Well you can go creative with this function, and do many things
-from calculating how long the nam
-print("Hello user,")
-name = input("What can I call you?\n")e is to building a biodata for the user.
+from calculating how long the name is to building a biodata for the user.
 It is all upto you, but to do those we need to learn more.
 
 So once  you have learnt the basics of python,
