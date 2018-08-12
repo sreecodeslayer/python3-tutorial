@@ -42,8 +42,8 @@ except TheUnwantedExpectionClass:
 	.
 	.
 	.
-	Let know user of needed,
-	gracefully hanlde the error
+	Let know user if needed,
+	gracefully handle the error
 
 Here the place where the error can occur is while python interprets
 the line No. 11
