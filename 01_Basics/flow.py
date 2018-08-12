@@ -49,11 +49,58 @@ Loops
 '''
 
 actual_user = 'sreenadh'
-entered_name = input('Enter your username: ')
 
+
+entered_name = input('Enter your username: ')
 if actual_user == entered_name:
     print('Welcome, %s' % entered_name)
 
 
+entered_name = input('Enter your username: ')
+if actual_user == entered_name:
+    print('Welcome, %s' % entered_name)
+else:
+    print("Sorry, I don't know you yet! Are you a new member?")
+    new_user = input('Enter your username: ')
+    new_password = input('Enter password: ')
+    print('Welcome, %s' % new_user)
+
+
+entered_name = input('Enter your username: ')
 actual_password = 'givemeaccess'
-entered_passwd = input('Enter your password: ')
+if actual_user == entered_name:
+    entered_passwd = input('Enter your password: ')
+    if actual_password == entered_passwd:
+        print('Welcome, %s' % entered_name)
+    else:
+        print('Wrong password, bye.')
+else:
+    print("Sorry, I don't know you yet! Are you a new member?")
+    new_user = input('Enter your username: ')
+    new_password = input('Enter password: ')
+    print('Welcome, %s' % new_user)
+
+first_user = 'sreenadh'
+first_pass = 'access4sree'
+second_user = 'mohandas'
+second_pass = 'access4mohan'
+
+
+entered_name = input('Enter your username: ')
+if first_user == entered_name:
+    entered_passwd = input('Enter your password: ')
+    if first_pass == entered_passwd:
+        print('Welcome, %s' % entered_name)
+    else:
+        print('Wrong password, bye.')
+elif second_user == entered_name:
+    entered_passwd = input('Enter your password: ')
+    if second_pass == entered_passwd:
+        print('Welcome, %s' % entered_name)
+    else:
+        print('Wrong password, bye.')
+else:
+    print("Sorry, I don't know you yet! Are you a new member?")
+    new_user = input('Enter your username: ')
+    new_password = input('Enter password: ')
+    print('Welcome, %s' % new_user)
