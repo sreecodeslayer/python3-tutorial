@@ -71,3 +71,43 @@ before running the code block
 # anotherghost()
 # ghost = 10
 # print('Am lonely: ', ghost)
+
+'''
+Scopes within functions
+'''
+
+
+# def shop_a():
+#     print('** Scope for shop_a created **')
+#     veg_burger = 10
+#     ham_burger = 20
+#     print('We have %s Veg. Burger and %s Ham Burger' %
+#           (veg_burger, ham_burger))
+
+
+# def shop_b():
+#     print('** Scope for shop_b created **')
+#     veg_burger = 20
+#     ham_burger = 10
+#     print('We have %s Veg. Burger and %s Ham Burger' %
+#           (veg_burger, ham_burger))
+
+
+# def customer_a():
+#     # He visited shop A, so he gets:
+#     shop_a()
+
+
+# def customer_b():
+#     # He visited shop A, so he gets:
+#     shop_b()
+
+
+# print('Customer A')
+# customer_a()
+# print('\nCustomer B')
+# customer_b()
+
+# print('\nTrying to access local scopes of shop functions')
+# # Obviously python is going to be angry here, let's see
+# print(veg_burger, ham_burger)
