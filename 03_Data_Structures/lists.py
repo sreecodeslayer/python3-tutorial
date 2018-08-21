@@ -85,10 +85,15 @@ print(len(spam))
 
 .remove(item) will search and remove an item from list
 .pop() will take out the last element that was inserted first
-and is lost forever
+and is lost forever.
+
+You can remove and pop untill all elements are out of the list
+after which you will get an index error. Try for yourself
 '''
 spam.remove([13, 14])
 spam.remove('16')
+
+spam.pop()
 
 '''
 Trying to remove a non-member item will also throw an error
