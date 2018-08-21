@@ -135,7 +135,6 @@ that returns either a True or False.
 #     spam += 1
 
 
-
 '''
 Let us write a small program that will continue adding your integer input
 untill you tell it to stop
@@ -164,3 +163,7 @@ that returns an somekind iterable
 '''
 # for num in range(10):
 #     print("Num : %s" % num)
+
+DUMMY_STRING = 'This is a dummy string that serves no real purpose'
+for character in DUMMY_STRING:
+    print('%s - ' % character)
