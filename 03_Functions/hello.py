@@ -1,10 +1,10 @@
 '''
 ================
-Python Functions 
+Python Functions
 ================
 
 Functions in python like almost all programming languages
-lets the programmer group certain related tasks into a single 
+lets the programmer group certain related tasks into a single
 function call.
 Functions change the flow of control just like the loops and
 the conditional statements that learned a while ago.
@@ -31,8 +31,8 @@ def function():
 '''
 Funtions that returns an output
 
-This function will however fail with a TypeError if we supply values of types other than
-a number.
+This function will however fail with a TypeError if we supply values of
+types other than a number.
 '''
 
 
@@ -40,7 +40,7 @@ a number.
 #     try:
 #         return numerator / denominator
 #     except ZeroDivisionError:
-#         print("Cannot divide by zero")
+#         print('Cannot divide by zero')
 #         return None
 
 '''
@@ -55,3 +55,19 @@ before running the code block
 # eggs = 42
 # spam()
 # print(eggs)
+
+# global ghost
+
+# def ghosts():
+#     ghost = 15
+#     print('Special breed of ghost: ', ghost)
+
+
+# def anotherghost():
+#     print('Am just a plain ghost: ', ghost)
+
+
+# ghosts()
+# anotherghost()
+# ghost = 10
+# print('Am lonely: ', ghost)
