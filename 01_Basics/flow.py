@@ -164,6 +164,6 @@ that returns an somekind iterable
 # for num in range(10):
 #     print("Num : %s" % num)
 
-DUMMY_STRING = 'This is a dummy string that serves no real purpose'
-for character in DUMMY_STRING:
-    print('%s - ' % character)
+# DUMMY_STRING = 'This is a dummy string that serves no real purpose'
+# for character in DUMMY_STRING:
+#     print('%s - ' % character)
