@@ -193,8 +193,8 @@ class Parrot:
 
 
 '''
-4. Inheritanc
-=============
+4. Inheritance
+==============
 '''
 
 
@@ -243,3 +243,9 @@ class Parrot(Bird):
     @property
     def is_sitting(self):
         return not self._is_flying
+
+
+robin = Parrot('robin', 'green')
+print(robin)
+print('Is %s flying? %s' % (robin.name, robin.is_flying))
+print('What species does %s belong to? %s' % (robin.name, robin.species))
