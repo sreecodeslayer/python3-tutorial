@@ -37,7 +37,7 @@ Python Tuples
 =============
 Tuples are immutable lists. ie. They do not support item assigments
 '''
-tup = (1, 2, 3)
+# tup = (1, 2, 3)
 
 '''
 1. Count, Index
@@ -45,18 +45,18 @@ tup = (1, 2, 3)
 You cannot extend or append like we did in List section,
 but you can count occurances and get index of items in tuple.
 '''
-print('No of 1s : %d' % tup.count(1))
-print('Index of 2 in the tup : ' % tup.index(2))
+# print('No of 1s : %d' % tup.count(1))
+# print('Index of 2 in the tup : ' % tup.index(2))
 
 '''
 2. Concatenation
 ================
 You can join two or more tuples
 '''
-tup1 = (1, 2, 3, 4)
-tup2 = ('one', 'two', 'three', 'four')
+# tup1 = (1, 2, 3, 4)
+# tup2 = ('one', 'two', 'three', 'four')
 
-print(tup1 + tup2)
+# print(tup1 + tup2)
 
 '''
 3. Nesting
@@ -64,8 +64,8 @@ print(tup1 + tup2)
 Tuple inside Tuple.
 Tuple can hold other datta types that we have seen so far.
 '''
-print((tup1, tup2))
-print((tup1, tup2, {'something': 'useless'}, ['random', 'list']))
+# print((tup1, tup2))
+# print((tup1, tup2, {'something': 'useless'}, ['random', 'list']))
 
 '''
 4. Immutable property
@@ -73,9 +73,9 @@ print((tup1, tup2, {'something': 'useless'}, ['random', 'list']))
 As told earlier, we can't modify the tuple.
 Let's see
 '''
-tup = (0, 1, 2, 3)
-tup[0] = 4
-print(tup)
+# tup = (0, 1, 2, 3)
+# tup[0] = 4
+# print(tup)
 
 '''
 TypeError: 'tuple' object does not support item assignment
