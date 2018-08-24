@@ -66,20 +66,20 @@ where robin is a parrot (an object of class Parrot)
 '''
 
 
-class Parrot:
-    species = 'bird'
-    legs = 2
-    wings = 2
-    eyes = 2
-    feathers = True
+# class Parrot:
+#     species = 'bird'
+#     legs = 2
+#     wings = 2
+#     eyes = 2
+#     feathers = True
 
-    def __init__(self, name, color):
-        self.name = name
-        self.color = color
+#     def __init__(self, name, color):
+#         self.name = name
+#         self.color = color
 
 
-robin = Parrot('robin', 'blue')
-print(robin)
+# robin = Parrot('robin', 'blue')
+# print(robin)
 
 
 '''
@@ -95,23 +95,23 @@ using __repr__() of the class
 '''
 
 
-class Parrot:
-    species = 'bird'
-    legs = 2
-    wings = 2
-    eyes = 2
-    feathers = True
+# class Parrot:
+#     species = 'bird'
+#     legs = 2
+#     wings = 2
+#     eyes = 2
+#     feathers = True
 
-    def __init__(self, name, color):
-        self.name = name
-        self.color = color
+#     def __init__(self, name, color):
+#         self.name = name
+#         self.color = color
 
-    def __repr__(self):
-        return '<Parrot: %s %s>' % (self.name, self.color)
+#     def __repr__(self):
+#         return '<Parrot: %s %s>' % (self.name, self.color)
 
 
-robin = Parrot('robin', 'blue')
-print(robin)
+# robin = Parrot('robin', 'blue')
+# print(robin)
 
 '''
 2. Defining behaviour
@@ -120,31 +120,31 @@ print(robin)
 '''
 
 
-class Parrot:
-    species = 'bird'
-    legs = 2
-    wings = 2
-    eyes = 2
-    feathers = True
+# class Parrot:
+#     species = 'bird'
+#     legs = 2
+#     wings = 2
+#     eyes = 2
+#     feathers = True
 
-    def __init__(self, name, color):
-        self.name = name
-        self.color = color
+#     def __init__(self, name, color):
+#         self.name = name
+#         self.color = color
 
-    def __repr__(self):
-        return '<Parrot: %s %s>' % (self.name, self.color)
+#     def __repr__(self):
+#         return '<Parrot: %s %s>' % (self.name, self.color)
 
-    def fly(self):
-        print('Preparing wings')
-        print('Crouching...')
-        print('Jumping...')
-        print('%s is now flying...' % self.name.capitalize())
+#     def fly(self):
+#         print('Preparing wings')
+#         print('Crouching...')
+#         print('Jumping...')
+#         print('%s is now flying...' % self.name.capitalize())
 
-    def sit(self):
-        print('Slowing down..')
-        print('Descending...')
-        print('Hops on to a branch...')
-        print('%s has landed on a tree branch' % self.name.capitalize())
+#     def sit(self):
+#         print('Slowing down..')
+#         print('Descending...')
+#         print('Hops on to a branch...')
+#         print('%s has landed on a tree branch' % self.name.capitalize())
 
 
 '''
@@ -154,42 +154,42 @@ class Parrot:
 '''
 
 
-class Parrot:
-    species = 'bird'
-    legs = 2
-    wings = 2
-    eyes = 2
-    feathers = True
+# class Parrot:
+#     species = 'bird'
+#     legs = 2
+#     wings = 2
+#     eyes = 2
+#     feathers = True
 
-    def __init__(self, name, color):
-        self.name = name
-        self.color = color
-        self._is_flying = False
+#     def __init__(self, name, color):
+#         self.name = name
+#         self.color = color
+#         self._is_flying = False
 
-    def __repr__(self):
-        return '<Parrot: %s %s>' % (self.name, self.color)
+#     def __repr__(self):
+#         return '<Parrot: %s %s>' % (self.name, self.color)
 
-    def fly(self):
-        print('Preparing wings')
-        print('Crouching...')
-        print('Jumping...')
-        print('%s is now flying...' % self.name.capitalize())
-        self._is_flying = True
+#     def fly(self):
+#         print('Preparing wings')
+#         print('Crouching...')
+#         print('Jumping...')
+#         print('%s is now flying...' % self.name.capitalize())
+#         self._is_flying = True
 
-    def sit(self):
-        print('Slowing down..')
-        print('Descending...')
-        print('Hops on to a branch...')
-        print('%s has landed on a tree branch' % self.name.capitalize())
-        self._is_flying = False
+#     def sit(self):
+#         print('Slowing down..')
+#         print('Descending...')
+#         print('Hops on to a branch...')
+#         print('%s has landed on a tree branch' % self.name.capitalize())
+#         self._is_flying = False
 
-    @property
-    def is_flying(self):
-        return self._is_flying
+#     @property
+#     def is_flying(self):
+#         return self._is_flying
 
-    @property
-    def is_sitting(self):
-        return not self._is_flying
+#     @property
+#     def is_sitting(self):
+#         return not self._is_flying
 
 
 '''
@@ -198,54 +198,55 @@ class Parrot:
 '''
 
 
-class Bird:
-    species = 'bird'
-    legs = 2
-    wings = 2
-    eyes = 2
-    feathers = True
+# class Bird:
+#     species = 'bird'
+#     legs = 2
+#     wings = 2
+#     eyes = 2
+#     feathers = True
 
-    def fly(self):
-        pass
+#     def fly(self):
+#         pass
 
-    def sit(self):
-        pass
-
-
-class Parrot(Bird):
-
-    def __init__(self, name, color):
-        self.name = name
-        self.color = color
-        self._is_flying = False
-
-    def __repr__(self):
-        return '<Parrot: %s %s>' % (self.name, self.color)
-
-    def fly(self):
-        print('Preparing wings')
-        print('Crouching...')
-        print('Jumping...')
-        print('%s is now flying...' % self.name.capitalize())
-        self._is_flying = True
-
-    def sit(self):
-        print('Slowing down..')
-        print('Descending...')
-        print('Hops on to a branch...')
-        print('%s has landed on a tree branch' % self.name.capitalize())
-        self._is_flying = False
-
-    @property
-    def is_flying(self):
-        return self._is_flying
-
-    @property
-    def is_sitting(self):
-        return not self._is_flying
+#     def sit(self):
+#         pass
 
 
-robin = Parrot('robin', 'green')
-print(robin)
-print('Is %s flying? %s' % (robin.name, robin.is_flying))
-print('What species does %s belong to? %s' % (robin.name, robin.species))
+# class Parrot(Bird):
+
+#     def __init__(self, name, color):
+#         self.name = name
+#         self.color = color
+#         self._is_flying = False
+
+#     def __repr__(self):
+#         return '<Parrot: %s %s>' % (self.name, self.color)
+
+#     def fly(self):
+#         print('Preparing wings')
+#         print('Crouching...')
+#         print('Jumping...')
+#         print('%s is now flying...' % self.name.capitalize())
+#         self._is_flying = True
+
+#     def sit(self):
+#         print('Slowing down..')
+#         print('Descending...')
+#         print('Hops on to a branch...')
+#         print('%s has landed on a tree branch' % self.name.capitalize())
+#         self._is_flying = False
+
+#     @property
+#     def is_flying(self):
+#         return self._is_flying
+
+#     @property
+#     def is_sitting(self):
+#         return not self._is_flying
+
+
+# robin = Parrot('robin', 'green')
+# print(robin)
+# print('Is %s flying? %s' % (robin.name, robin.is_flying))
+# print('What species does %s belong to? %s' % (robin.name, robin.species))
+# print('%s has feathers? %s' % (robin.name.capitalize(), robin.feathers))
