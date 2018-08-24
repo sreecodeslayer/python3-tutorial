@@ -101,3 +101,45 @@ ValueError: list.remove(x): x not in list
 
 '''
 spam.remove(100)
+
+'''
+5. Reverse and Sort
+===================
+.reverse() will reverse the order
+.sort() will reorder the elements into ascending order by default
+'''
+
+spam.reverse()
+spam.sort()
+spam.sort(reverse=True)
+
+'''
+6. List comprehension
+=====================
+Sometimes there comes a situation where we make a sub list
+depending on a satisfaction of some condition
+
+say if the element is greater than a number, we add it to another list instead
+'''
+
+initial = [2, 3, 1, 6, 4, 8, 7, 9]
+final = []
+
+for item in initial:
+    if item > 5:
+        final.append(item)
+'''
+Now there is nothing wrong in writing it this way. However, python
+have a way of writing some meaningful one liners that compress a big loop
+in to a single line
+'''
+
+final = [item for item in initial if item > 5]
+final = [item if item > 5 else item*5 for item in initial]
+'''
+Why list comprehension?
+Eventhough the operation looks exactly the same, using list comprehension
+to build a list is a bit faster as it uses C directly in building, unlike the for loop in
+python that uses append() which makes a numerous function calls, slowing down the flow of
+control
+'''
